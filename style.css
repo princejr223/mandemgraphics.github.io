@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+.hero{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(#fff9f9, rgba(255, 255, 255, 0.87), rgba(0, 0, 0, 0)), url(klk.jpg);
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 100px;
+}
+.typewriter{
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Poppins',sans-serif;
+}
+.typewriter span{
+    color: blue;
+}
+.typewriter::after{
+    content: '|';
+    position: absolute;
+    right: 0;
+    color: transparent;
+    width: 100%;
+    background: rgb(255, 252, 252);
+    animation: typing 3s steps(27) alternate infinite,
+                line 1s infinite;
+}
+@keyframes typing{
+    to{
+        width: 0%;
+    }
+}
+@keyframes line{
+    50%{
+        color: transparent;
+    }
+}
+.logo{
+    text-transform: uppercase;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: rgb(255, 1, 1);
+}
+.logo span{
+    color: rgb(0, 0, 0);
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 10px 20px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    position: relative;
+    padding: 5px 0;
+    font-size: 20px;
+}
+nav ul li a:hover{
+    color: rgb(7, 44, 255);
+}
+nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background: rgb(6, 51, 255);
+    transition: .3s;
+    bottom: 0;
+}
+nav ul li a:hover:after{
+    width: 100%;
+}
+.btn{
+    color: #fff;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 16px 40px;
+    border-radius: 500px;
+    display: inline-block;
+    font-weight: 600;
+    transition: all .4s ease-in-out;
+    background-size: 15% 100%;
+    background: rgb(11, 224, 11);
+    border: 7px solid rgb(11, 224, 11);
+}
+.btn:hover{
+    background: transparent;
+    border-color: rgb(11, 224, 11);
+    color: rgb(11, 224, 11);
+}
+.container{
+    position: absolute;
+    top: 35%;
+    left: 30%;
+}
+.container .title{
+    color: #1f1f25;
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    display: inline-block;
+    margin-bottom: 20px;
+    background: linear-gradient(120deg, #1c99fe 20.69%, #7644ff 50.19%, #fd4766 79.69%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.container h1{
+    color: #1f1f25;
+    font-size: 200%;
+    font-weight: 900;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 80%;
+    margin: 10px 0 30px;
+}
+.container span{
+    color: red;
+}
+
+.container p{
+    width: 55%;
+    color: #1f1f25;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+
